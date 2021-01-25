@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../assets/img/logo-dark.png";
-import { Link, BrowserRouter as Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setisOpen] = React.useState(false);
@@ -8,22 +8,28 @@ export default function Navbar() {
     setisOpen(!isOpen);
   }
   return (
-    <div className='flex justify-between items-center px-6 py-8'>
-      <img src={Logo} alt='design logo' width='196px' />
-      <Router>
+    <div>
+      <div className='flex justify-between items-center px-6 py-8'>
+        <Link to='/'>
+          <img src={Logo} alt='design logo' width='196px' />
+        </Link>
         <nav>
-          <ul className={`sm:flex ${  isOpen ? "block" : "hidden" }`}>
+          <ul className={`sm:flex ${isOpen ? "block" : "hidden"}`}>
             <Link to='/ourCompany'>
               <li>Our Company</li>
             </Link>
             <Link to='/locations'>
-              <li>Locations</li>
+              <li className='px-4'>Locations</li>
             </Link>
             <Link to='/contact'>
               <li>Contact</li>
             </Link>
           </ul>
-          <button type='button' className='block sm:hidden' onClick={handleClick}>
+          <button
+            type='button'
+            className='block sm:hidden'
+            onClick={handleClick}
+          >
             <svg
               className='h-6 w-6 fill-current'
               xmlns='http://www.w3.org/2000/svg'
@@ -45,7 +51,7 @@ export default function Navbar() {
             </svg>
           </button>
         </nav>
-      </Router>
+      </div>
     </div>
   );
 }
