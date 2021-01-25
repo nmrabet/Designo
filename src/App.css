@@ -1,0 +1,43 @@
+.portfolio {
+    margin: 0 auto;
+    display: grid;
+    border-radius: 20px;
+    width: 50%;
+    padding: 150px;
+    background-image: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    object-fit: cover;
+    background-position: center;
+}
+
+.background {
+    background-color: #e87f69;
+}
+
+.about-us-img {
+    width: 100%;
+    height: 280px;
+    background-image: url('https://images.unsplash.com/photo-1510130146128-7a7b6afb6f9d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    object-fit: fill;
+    background-position: center;
+}
+
+.about-us-img2 {
+    width: 100%;
+    height: 200px;
+    background-image: url('https://images.unsplash.com/photo-1522152302542-71a8e5172aa1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8YmFjayUyMHdvbWFuJTIwd29ya3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    object-fit: fill;
+    background-position: center;
+}
+
+.about-us-img3 {
+    width: 100%;
+    height: 200px;
+    background-image: url('https://images.unsplash.com/photo-1495653797063-114787b77b23?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGhhbmR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    object-fit: fill;
+    background-position: center;
+}
+
+.background-text {
+    background-color: #fdf3f1;
+    color: #e87f69;
+}
