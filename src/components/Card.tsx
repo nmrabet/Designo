@@ -6,23 +6,6 @@ import work2 from "../assets/img/undraw_Add_friends_wa2a.svg";
 import image from "../assets/img/header-img.png";
 
 export default function Card() {
-  const CardData = [
-    {
-      id: 1,
-      title: "Web design",
-      subtitle: "View Project",
-    },
-    {
-      id: 2,
-      title: "App design",
-      subtitle: "View Project",
-    },
-    {
-      id: 3,
-      title: "Graphic Design",
-      subtitle: "View Projects",
-    },
-  ];
   return (
     <div className=''>
       <div className='bg-red-500 flex flex-col justify-center items-center pt-28 px-16 text-center space-y-6 text-white'>
@@ -39,18 +22,23 @@ export default function Card() {
         </button>
         <img src={image} alt='phone' className='header-img' />
       </div>
-      <div className='py-20'> 
-        {CardData.map((element) => {
-          return (
-            <div
-              key={element.id}
-              className='portfolio'
-            >
-              <h2 className='text-3xl text-white uppercase'>{element.title}</h2>
-              <p className='text-white'>{element.subtitle}</p>
+      <div className='py-20 text-center flex flex-col justify-center items-center space-y-4'>
+        <div className='big-screen'>
+          <div className='cards1 flex flex-col justify-center items-center'>
+            <h2>Web design</h2>
+            <p>View Project</p>
+          </div>
+          <div>
+            <div className='cards flex flex-col justify-center items-center'>
+              <h2>App design</h2>
+              <p>View Project</p>
             </div>
-          );
-        })}
+            <div className='cards flex flex-col justify-center items-center'>
+              <h2>Graphic Design</h2>
+              <p>View Project</p>
+            </div>
+          </div>
+        </div>
       </div>
       <div className='flex flex-col justify-center items-center text-center space-y-6 py-24'>
         <img
