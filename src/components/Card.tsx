@@ -22,19 +22,19 @@ export default function Card() {
         </button>
         <img src={image} alt='phone' className='header-img' />
       </div>
-      <div className='py-20 text-center flex flex-col justify-center items-center space-y-4'>
+      <div className='py-20 text-center flex flex-col justify-center items-center space-y-4 text-white text-xl'>
         <div className='big-screen'>
           <div className='cards1 flex flex-col justify-center items-center'>
-            <h2>Web design</h2>
+            <h2 className='font-semibold text-2xl'>Web design</h2>
             <p>View Project</p>
           </div>
           <div>
             <div className='cards flex flex-col justify-center items-center'>
-              <h2>App design</h2>
+              <h2 className='font-semibold text-2xl'>App design</h2>
               <p>View Project</p>
             </div>
-            <div className='cards flex flex-col justify-center items-center'>
-              <h2>Graphic Design</h2>
+            <div className='cards cardphoto flex flex-col justify-center items-center'>
+              <h2 className='font-semibold text-2xl'>Graphic Design</h2>
               <p>View Project</p>
             </div>
           </div>
