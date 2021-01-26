@@ -10,6 +10,7 @@ import WebDesign from "./components/pages/WebDesign";
 import { Switch, Route } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import AppDesign from "./components/pages/AppDesign";
+import GraphicDesign from "./components/pages/GraphicDesign";
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
           </Route>
           <Route path='/appDesign'>
             <AppDesign />
+          </Route>
+          <Route path='/graphicDesign'>
+            <GraphicDesign />
           </Route>
         </Switch>
         <Footer />
