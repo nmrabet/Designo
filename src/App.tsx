@@ -4,8 +4,9 @@ import Navbar from "./components/Navbar";
 import Card from "./components/Card";
 import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer";
-import Locations from './components/Locations';
-import Contact from './components/Contact';
+import Locations from "./components/Locations";
+import Contact from "./components/Contact";
+import WebDesign from "./components/pages/WebDesign";
 import { Switch, Route } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route path='/contact'>
             <Contact />
+          </Route>
+          <Route path='/webDesign'>
+            <WebDesign />
           </Route>
         </Switch>
         <Footer />

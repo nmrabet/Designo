@@ -104,3 +104,32 @@
     flex-direction: row;
   }
 }
+
+.project-img {
+  margin: 0 auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 300px;
+  height: 300px;
+}
+
+.project-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdf3f1;
+  color: #e87f69;
+  margin: 0 auto;
+  width: 300px;
+  height: 200px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+/* margin: 3em auto;
+  border: 1px red solid;
+  width: 300px;
+  height: 450px;
+  border-radius: 20px; */
