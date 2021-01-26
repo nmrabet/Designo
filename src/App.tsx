@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import WebDesign from "./components/pages/WebDesign";
 import { Switch, Route } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
+import AppDesign from "./components/pages/AppDesign";
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
           </Route>
           <Route path='/webDesign'>
             <WebDesign />
+          </Route>
+          <Route path='/appDesign'>
+            <AppDesign />
           </Route>
         </Switch>
         <Footer />
