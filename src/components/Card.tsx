@@ -2,7 +2,7 @@ import React from "react";
 import work from "../assets/img/undraw_programming_2svr.svg";
 import work1 from "../assets/img/undraw_forming_ideas_0pav.svg";
 import work2 from "../assets/img/undraw_Add_friends_wa2a.svg";
-
+import { Link } from "react-router-dom";
 import image from "../assets/img/header-img.png";
 
 export default function Card() {
@@ -24,19 +24,25 @@ export default function Card() {
       </div>
       <div className='py-20 text-center flex flex-col justify-center items-center space-y-4 text-white text-xl uppercase'>
         <div className='big-screen'>
-          <div className='cards1 flex flex-col justify-center items-center'>
-            <h2 className='font-semibold text-4xl pb-8'>Web design</h2>
-            <p>View Project</p>
-          </div>
+          <Link to='/webDesign'>
+            <div className='cards1 flex flex-col justify-center items-center'>
+              <h2 className='font-semibold text-4xl pb-8'>Web design</h2>
+              <p>View Project</p>
+            </div>
+          </Link>
           <div>
-            <div className='cards flex flex-col justify-center items-center'>
-              <h2 className='font-semibold text-4xl pb-8'>App design</h2>
-              <p>View Project</p>
-            </div>
-            <div className='cards cardphoto flex flex-col justify-center items-center'>
-              <h2 className='font-semibold text-4xl pb-8'>Graphic Design</h2>
-              <p>View Project</p>
-            </div>
+            <Link to='/appDesign'>
+              <div className='cards flex flex-col justify-center items-center'>
+                <h2 className='font-semibold text-4xl pb-8'>App design</h2>
+                <p>View Project</p>
+              </div>
+            </Link>
+            <Link to='/graphicDesign'>
+              <div className='cards cardphoto flex flex-col justify-center items-center'>
+                <h2 className='font-semibold text-4xl pb-8'>Graphic Design</h2>
+                <p>View Project</p>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
