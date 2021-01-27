@@ -128,4 +128,12 @@
   border-bottom-left-radius: 20px;
 }
 
-
+.box {
+  position: relative;
+  bottom: -70px;
+  margin: 0 auto;
+  padding: 4em 2em;
+  background-color: #e87f69;
+  border-radius: 20px;
+  width: 45%;
+}
